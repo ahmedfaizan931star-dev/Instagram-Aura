@@ -1,0 +1,8 @@
+{
+  "name": "Aura",
+  "description": "Aura - A next-gen social experience with AI-powered creativity.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}
