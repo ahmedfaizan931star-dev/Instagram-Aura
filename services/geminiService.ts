@@ -1,7 +1,6 @@
 import { GoogleGenAI } from "@google/genai";
 
-const apiKey = process.env.API_KEY || ''; // In a real app, ensure this is set safely
-// Note: In this sandbox environment, we assume the environment variable is injected.
+const apiKey = import.meta.env.VITE_GEMINI_API_KEY || '';
 
 let ai: GoogleGenAI | null = null;
 
