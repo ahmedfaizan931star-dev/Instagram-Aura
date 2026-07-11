@@ -1,20 +1,47 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# Aura
 
-# Run and deploy your AI Studio app
+A social media UI concept with AI-powered features — write captions and generate images for posts using Google's Gemini API.
 
-This contains everything you need to run your app locally.
+## Features
 
-View your app in AI Studio: https://ai.studio/apps/drive/1bx9PKDc05AUUmKB7xvkqXG0psAzJktgD
+- Instagram-style feed, stories, and profile views
+- AI-generated captions for uploaded photos (Gemini 2.5 Flash)
+- AI image generation from text prompts (Gemini 2.5 Flash Image)
+- Falls back to a simulated caption if no API key is configured, so the UI stays fully explorable without one
+
+## Tech Stack
+
+- React 19 + TypeScript
+- Vite
+- Tailwind CSS
+- Google Gemini API (`@google/genai`)
+- Lucide React icons
 
 ## Run Locally
 
-**Prerequisites:**  Node.js
-
+**Prerequisites:** Node.js
 
 1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+   ```
+   npm install
+   ```
+2. Create a `.env.local` file and add your Gemini API key:
+   ```
+   VITE_GEMINI_API_KEY=your_key_here
+   ```
+3. Run the dev server:
+   ```
+   npm run dev
+   ```
+
+Get a free Gemini API key at [aistudio.google.com/apikey](https://aistudio.google.com/apikey).
+
+## Build
+
+```
+npm run build
+```
+
+---
+
+Built by [Faizan](https://portfolio-seven-opal-80.vercel.app/) — Android & full-stack developer.
